@@ -15,16 +15,18 @@ menu = ''
 if userid == 'abc' and userpw == '1234':
     st.sidebar.title("환영합니다♥")
 
-    menu = st.sidebar.radio("메뉴선택", ['파이썬 기초', '탐색적 분석: 전기자동차', '머신러닝: 중고차 가격 예측', '미니프로젝트: MBTI별 여가활동 추천'], index=None)
-    # st.header(menu)
+    menu = st.sidebar.radio("메뉴선택", ['소개', '파이썬 기초', '탐색적 분석: 전기자동차', '머신러닝: 중고차 가격 예측', '미니프로젝트: MBTI별 여가활동 추천'])
+    st.header(menu)
 
-    if menu == '파이썬 기초':
+    if menu == '소개':
+        st.write("YJ의 포트폴리오에 오신 것을 환영합니다.")
+        st.write("여기에 있는 내용은 2024년 강북여성인력개발센터 AI리터러시 과정 중 일부입니다.")
+        st.write("학습을 위해 임으로 변경한 내용이 있을 수 있으며, 교육 중 학습한 내용이 추가될 수 있습니다.")
+    elif menu == '파이썬 기초':
         pb.basic()
     elif menu == '탐색적 분석: 전기자동차':
         ec.elec_exe()
     elif menu == '머신러닝: 중고차 가격 예측':
-        #st.header("공사중...")
-        #st.image('Hello.jpg')
         cp.aiml_main()
     elif menu == '미니프로젝트: MBTI별 여가활동 추천':
         mp.mbti_main()
