@@ -17,7 +17,7 @@ def indata():
     # 데이터 입력
     for i in fields:
         data[i] = st.text_input(f'{i} : ')
-    filename = 'aidata/used_car_x_test_indata.csv'
+    filename = 'data/used_car_x_test_indata.csv'
 
     with open(filename, 'w', newline='') as f:    # f는 파일 개체 변수
         w = csv.DictWriter(f, fieldnames=fields)    # 딕셔너리 데이터임을 선언.
@@ -30,8 +30,8 @@ def indata():
 def model(filename):
 
     # 1. 파일 열기 ===================================================
-    df_X_train = pd.read_csv('aidata/used_car_x_train.csv')
-    df_y_train = pd.read_csv('aidata/used_car_y_train.csv')
+    df_X_train = pd.read_csv('data/used_car_x_train.csv')
+    df_y_train = pd.read_csv('data/used_car_y_train.csv')
     df_X_test = pd.read_csv(filename)
 
     # 2. 전처리 ======================================================
