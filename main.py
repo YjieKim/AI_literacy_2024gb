@@ -3,7 +3,7 @@ import streamlit as st
 import Python_ElectricCar_streamlit as ec
 import pybasic as pb
 import mProject_mbti as mp
-import car_predict_up as cp
+import car_predict as cp
 
 # 로그인 화면
 st.sidebar.title("로그인")
