@@ -1,6 +1,6 @@
 # 스트림릿 사용
 import streamlit as st
-import Python_ElectricCar_streamlit as ec
+import electric_car as ec
 import pybasic as pb
 import mProject_mbti as mp
 import car_predict as cp
