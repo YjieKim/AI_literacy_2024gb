@@ -123,7 +123,7 @@ def elec_exe():
     elif menu == '2022년 분기별 분석':
         region_2022_quarter(df_basic)
     else:
-        st.image("imange/Moses.png", width=600)
+        st.image("image/Moses.png", width=600)
 
 # 자신이 호출할 때만 실행되는 코드. (다른 파일에서 호출할 때는 실행 안 됨.)
 if __name__=='__main__':
