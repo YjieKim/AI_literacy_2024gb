@@ -14,7 +14,7 @@ plt.rc('font', family='malgun gothic')
 def basic():
 
     # 데이터 가져오기
-    df = pd.read_csv('electric_car_data.csv', encoding='EUC-KR')
+    df = pd.read_csv('data/electric_car_data.csv', encoding='EUC-KR')
 
     # melt를 위해 전체 컬럼명이 필요함.
     columns = df.columns.to_list()
