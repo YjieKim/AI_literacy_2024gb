@@ -14,7 +14,7 @@ userpw = st.sidebar.text_input("패스워드 입력", value='', type='password',
 menu = ''
 if userid == 'abc' and userpw == '1234':
     st.sidebar.title("환영합니다♥")
-    st.divider()
+    st.sidebar.divider()
     
     menu = st.sidebar.radio("메뉴선택", ['소개', '파이썬 기초', '탐색적 분석: 전기자동차', '머신러닝: 중고차 가격 예측', '미니프로젝트: MBTI별 여가활동 추천'])
     st.header(menu)
