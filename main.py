@@ -15,7 +15,7 @@ st.header("YJ의 포트폴리오")
 
 menu = ''
 if userid == 'abc' and userpw == '1234':
-    st.sidebar.subtitle("환영합니다♥")
+    st.sidebar.subheader("환영합니다♥")
     st.sidebar.divider()
     
     menu = st.sidebar.radio("메뉴선택", ['소개', '파이썬 기초', '탐색적 분석: 전기자동차', '머신러닝: 중고차 가격 예측', '미니프로젝트: MBTI별 여가활동 추천'])
