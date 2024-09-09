@@ -1,12 +1,11 @@
-import platform
-from matplotlib import font_manager, rc
-
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 import warnings
 import streamlit as st
 
+import platform
+from matplotlib import font_manager, rc
 
 # 경고 메시지 출력 안 함.
 warnings.filterwarnings(action='ignore')
