@@ -8,7 +8,9 @@ import streamlit as st
 warnings.filterwarnings(action='ignore')
 
 # 한글 글꼴 설정
-plt.rc('font', family='malgun gothic')
+#plt.rc('font', family='Malgun Gothic')
+plt.rcParams['font.family'] = 'Malgun Gothic'
+plt.rcParams['axes.unicode_minus'] = False
 
 # 기본 실행 함수
 def basic():
