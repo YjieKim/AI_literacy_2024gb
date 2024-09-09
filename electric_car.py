@@ -52,9 +52,6 @@ def region_year_mean(df_melt):
     # 데이터프레임의 행렬을 전환 : T
     st.dataframe(df_region_year_n.T)
 
-    # 한글 글꼴 설정
-    plt.rc('font', family='malgun gothic')
-    
     # 보통 차트 변수는 ax(=axes) 사용 많이 함.
     ax = df_region_year_n.plot(kind='bar', rot=0)
     
@@ -113,9 +110,6 @@ def region_2022_quarter(df_melt):
 
 # main 실행 함수
 def elec_exe():
-
-    # 한글 글꼴 설정
-    plt.rc('font', family='malgun gothic')
     
     # menu = st.selectbox("분석내용", ['지역별/연도별 분석', '2023년 지역별 분석', '2022년 분기별 분석'], index=None, placeholder="선택하세요.")
     menu = st.selectbox("분석내용", ['선택하세요.', '지역별/연도별 분석', '2023년 지역별 분석', '2022년 분기별 분석'])
