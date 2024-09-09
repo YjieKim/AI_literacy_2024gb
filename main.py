@@ -11,11 +11,9 @@ st.sidebar.title("로그인")
 userid = st.sidebar.text_input("아이디(ID) 입력", value='abc', max_chars=10) # value값을 기본으로 넣어둔 것.
 userpw = st.sidebar.text_input("패스워드 입력", value='1234', type='password', max_chars=10)    # 값이 보이지 않게.
 
-st.header("YJ의 포트폴리오")
-
 menu = ''
 if userid == 'abc' and userpw == '1234':
-    st.sidebar.subheader("환영합니다♥")
+    st.sidebar.subheader("YJ의 포트폴리오")
     st.sidebar.divider()
     
     menu = st.sidebar.radio("메뉴선택", ['소개', '파이썬 기초', '탐색적 분석: 전기자동차', '머신러닝: 중고차 가격 예측', '미니프로젝트: MBTI별 여가활동 추천'])
