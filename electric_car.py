@@ -8,8 +8,7 @@ import streamlit as st
 warnings.filterwarnings(action='ignore')
 
 # 한글 글꼴 설정
-# plt.rc('font', family='malgun gothic')
-plt.rc('font', family='Gulim')
+plt.rc('font', family='malgun gothic')
 
 # 기본 실행 함수
 def basic():
@@ -111,6 +110,9 @@ def region_2022_quarter(df_melt):
 
 # main 실행 함수
 def elec_exe():
+
+    # 한글 글꼴 설정
+    plt.rc('font', family='malgun gothic')
     
     # menu = st.selectbox("분석내용", ['지역별/연도별 분석', '2023년 지역별 분석', '2022년 분기별 분석'], index=None, placeholder="선택하세요.")
     menu = st.selectbox("분석내용", ['선택하세요.', '지역별/연도별 분석', '2023년 지역별 분석', '2022년 분기별 분석'])
