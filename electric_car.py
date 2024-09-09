@@ -52,6 +52,9 @@ def region_year_mean(df_melt):
     # 데이터프레임의 행렬을 전환 : T
     st.dataframe(df_region_year_n.T)
 
+    # 한글 글꼴 설정
+    plt.rc('font', family='malgun gothic')
+    
     # 보통 차트 변수는 ax(=axes) 사용 많이 함.
     ax = df_region_year_n.plot(kind='bar', rot=0)
     
