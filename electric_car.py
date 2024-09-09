@@ -4,18 +4,11 @@ import numpy as np
 import warnings
 import streamlit as st
 
-import platform
-from matplotlib import font_manager, rc
-
 # 경고 메시지 출력 안 함.
 warnings.filterwarnings(action='ignore')
 
 # 한글 글꼴 설정
-plt.rcParams['axes.unicode_minus'] = False
-if platform.system() == 'Linux':
-    rc('font', family='NanumGothic')
-else
-    plt.rc('font', family='malgun gothic')
+plt.rc('font', family='malgun gothic')
 
 # 기본 실행 함수
 def basic():
