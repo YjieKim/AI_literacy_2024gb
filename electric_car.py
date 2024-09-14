@@ -23,12 +23,13 @@ def font_setting():
     font_name = fm.FontProperties(fname=font_path).get_name()
     
     # 폰트 설정
-    #plt.rc('font', family=font_name)
+    plt.rc('font', family=font_name)
+
+    # 마이너스 폰트 깨짐 방지
     plt.rcParams['axes.unicode_minus'] = False
 
-    font_list = [font.name for font in fm.fontManager.ttflist]
+    #font_list = [font.name for font in fm.fontManager.ttflist]
 
-    plt.rc('font', family='DejaVu Serif')
 
 # 기본 실행 함수
 def basic():
