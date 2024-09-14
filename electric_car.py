@@ -28,7 +28,7 @@ def font_setting():
 
     font_list = [font.name for font in fm.fontManager.ttflist]
 
-    plt.rc('font', family='DejaVu Sans Mono')
+    plt.rc('font', family='DejaVu Serif')
 
 # 기본 실행 함수
 def basic():
