@@ -10,23 +10,28 @@ import streamlit as st
 warnings.filterwarnings(action='ignore')
 
 # 한글 글꼴 설정
-#plt.rc('font', family='Malgun Gothic')
-#plt.rcParams['font.family'] = 'Malgun Gothic'
-#plt.rcParams['axes.unicode_minus'] = False
-
-# 나눔글꼴 경로 설정
-font_path = 'font/NanumGothic.ttf'
-
-# 폰트 이름 가져오기
-font_name = fm.FontProperties(fname=font_path).get_name()
-st.write(f'fontpath = {font_path}, fontname = {font_name}')
-
-# 폰트 설정
-plt.rc('font', family=font_name)
+def font_setting():
+    
+    #plt.rc('font', family='Malgun Gothic')
+    #plt.rcParams['font.family'] = 'Malgun Gothic'
+    #plt.rcParams['axes.unicode_minus'] = False
+    
+    # 나눔글꼴 경로 설정
+    font_path = 'font/NanumGothic.ttf'
+    
+    # 폰트 이름 가져오기
+    font_name = fm.FontProperties(fname=font_path).get_name()
+    st.write(f'fontpath = {font_path}, fontname = {font_name}')
+    
+    # 폰트 설정
+    plt.rc('font', family=font_name)
 
 
 # 기본 실행 함수
 def basic():
+
+    # 한글 글꼴 설정
+    font_setting()
 
     # 데이터 가져오기
     df = pd.read_csv('data/electric_car_data.csv', encoding='EUC-KR')
