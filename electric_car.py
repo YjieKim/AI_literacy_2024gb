@@ -12,23 +12,6 @@ warnings.filterwarnings(action='ignore')
 # 한글 글꼴 설정
 def font_setting():
 
-    #plt.rc('font', family='Malgun Gothic')
-    #plt.rcParams['font.family'] = 'Malgun Gothic'
-    #plt.rcParams['axes.unicode_minus'] = False
-    
-    # 나눔글꼴 경로 설정
-    font_path = 'font/NanumGothic.ttf'
-    
-    # 폰트 이름 가져오기
-    font_name = fm.FontProperties(fname=font_path).get_name()
-    
-    # 폰트 설정
-    plt.rc('font', family=font_name)
-
-    # 마이너스 폰트 깨짐 방지
-    plt.rcParams['axes.unicode_minus'] = False
-
-    #font_list = [font.name for font in fm.fontManager.ttflist]
 
     fe = fm.FontEntry(
         fname=r'font/NanumGothic.ttf', # ttf 파일이 저장되어 있는 경로
