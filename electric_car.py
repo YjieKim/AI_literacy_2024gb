@@ -1,6 +1,6 @@
 import pandas as pd
-import koreanize_matplotlib
 import matplotlib.pyplot as plt
+import koreanize_matplotlib
 import numpy as np
 import warnings
 import streamlit as st
