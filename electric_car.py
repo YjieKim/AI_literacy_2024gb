@@ -9,12 +9,13 @@ import streamlit as st
 # 경고 메시지 출력 안 함.
 warnings.filterwarnings(action='ignore')
 
+# apt-get : 패키지 설치 명령어
+# -qq : 에러외의 메세지 숨기는 옵션키
+!apt-get -qq install fonts-nanum
+
 # 한글 글꼴 설정
 def font_setting():
 
-    # 폰트 캐시 삭제
-    fm._rebuild()
-    
     #plt.rc('font', family='Malgun Gothic')
     #plt.rcParams['font.family'] = 'Malgun Gothic'
     #plt.rcParams['axes.unicode_minus'] = False
