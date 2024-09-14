@@ -30,6 +30,7 @@ def font_setting():
     font_list = [font.name for font in fm.fontManager.ttflist]
     st.write('fontlist: ', font_list)
 
+    plt.rc('font', family='DejaVu Sans')
 
 # 기본 실행 함수
 def basic():
