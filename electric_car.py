@@ -11,6 +11,9 @@ warnings.filterwarnings(action='ignore')
 
 # 한글 글꼴 설정
 def font_setting():
+
+    # 폰트 캐시 삭제
+    fm._rebuild()
     
     #plt.rc('font', family='Malgun Gothic')
     #plt.rcParams['font.family'] = 'Malgun Gothic'
