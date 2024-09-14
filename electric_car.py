@@ -27,6 +27,9 @@ def font_setting():
     plt.rc('font', family=font_name)
     plt.rcParams['axes.unicode_minus'] = False
 
+    font_list = [font.name for font in fm.fontManager.ttflist]
+    st.write('fontlist: ', font_list)
+
 
 # 기본 실행 함수
 def basic():
