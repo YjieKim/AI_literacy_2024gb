@@ -1,6 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 #import koreanize_matplotlib
+import matplotlib.font_manager as fm
 import numpy as np
 import warnings
 import streamlit as st
@@ -10,8 +11,18 @@ warnings.filterwarnings(action='ignore')
 
 # 한글 글꼴 설정
 #plt.rc('font', family='Malgun Gothic')
-plt.rcParams['font.family'] = 'Malgun Gothic'
-plt.rcParams['axes.unicode_minus'] = False
+#plt.rcParams['font.family'] = 'Malgun Gothic'
+#plt.rcParams['axes.unicode_minus'] = False
+
+# 나눔글꼴 경로 설정
+font_path = 'font/NanumGothic.ttf'
+
+# 폰트 이름 가져오기
+font_name = fm.FontProperties(fname=font_path).get_name()
+
+# 폰트 설정
+plt.rc('font', family=font_name)
+
 
 # 기본 실행 함수
 def basic():
