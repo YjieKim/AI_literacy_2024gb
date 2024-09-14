@@ -10,21 +10,15 @@ import streamlit as st
 warnings.filterwarnings(action='ignore')
 
 # 한글 글꼴 설정
-def font_setting():
-
-
-    fe = fm.FontEntry(
-        fname=r'font/NanumGothic.ttf', # ttf 파일이 저장되어 있는 경로
-        name='NanumGothic')                        # 이 폰트의 원하는 이름 설정
-    fm.fontManager.ttflist.insert(0, fe)              # Matplotlib에 폰트 추가
-    plt.rcParams.update({'font.size': 12, 'font.family': 'NanumGothic'}) # 폰트 설정
+fe = fm.FontEntry(
+    fname=r'font/NanumGothic.ttf',             # ttf 파일이 저장되어 있는 경로
+    name='NanumGothic')                        # 이 폰트의 원하는 이름 설정
+fm.fontManager.ttflist.insert(0, fe)           # Matplotlib에 폰트 추가
+plt.rcParams.update({'font.size': 12, 'font.family': 'NanumGothic'}) # 폰트 설정
 
 
 # 기본 실행 함수
 def basic():
-
-    # 한글 글꼴 설정
-    font_setting()
 
     # 데이터 가져오기
     df = pd.read_csv('data/electric_car_data.csv', encoding='EUC-KR')
