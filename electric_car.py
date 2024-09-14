@@ -12,6 +12,7 @@ warnings.filterwarnings(action='ignore')
 # 한글 글꼴 설정
 def font_setting():
 
+    plt.rc('font', family='NanumGothic')
 
     # 마이너스 폰트 깨짐 방지
     plt.rcParams['axes.unicode_minus'] = False
