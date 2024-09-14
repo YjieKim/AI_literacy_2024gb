@@ -1,5 +1,5 @@
 import pandas as pd
-#import koreanize-matplotlib
+import koreanize_matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
 import warnings
