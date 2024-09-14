@@ -13,6 +13,8 @@ warnings.filterwarnings(action='ignore')
 def font_setting():
 
 
+    # 마이너스 폰트 깨짐 방지
+    plt.rcParams['axes.unicode_minus'] = False
 
     fe = fm.FontEntry(
         fname=r'font/NanumGothic.ttf', # ttf 파일이 저장되어 있는 경로
