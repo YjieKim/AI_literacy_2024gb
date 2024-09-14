@@ -23,14 +23,12 @@ def font_setting():
     font_name = fm.FontProperties(fname=font_path).get_name()
     
     # 폰트 설정
-    st.write(f'fontpath = {font_path}, fontname = {font_name}')
-    plt.rc('font', family=font_name)
+    #plt.rc('font', family=font_name)
     plt.rcParams['axes.unicode_minus'] = False
 
     font_list = [font.name for font in fm.fontManager.ttflist]
-    st.write('fontlist: ', font_list)
 
-    plt.rc('font', family='DejaVu Sans')
+    plt.rc('font', family='DejaVu Sans Mono')
 
 # 기본 실행 함수
 def basic():
