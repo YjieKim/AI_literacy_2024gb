@@ -21,10 +21,11 @@ def font_setting():
     
     # 폰트 이름 가져오기
     font_name = fm.FontProperties(fname=font_path).get_name()
-    st.write(f'fontpath = {font_path}, fontname = {font_name}')
     
     # 폰트 설정
+    st.write(f'fontpath = {font_path}, fontname = {font_name}')
     plt.rc('font', family=font_name)
+    plt.rcParams['axes.unicode_minus'] = False
 
 
 # 기본 실행 함수
