@@ -9,10 +9,6 @@ import streamlit as st
 # 경고 메시지 출력 안 함.
 warnings.filterwarnings(action='ignore')
 
-# apt-get : 패키지 설치 명령어
-# -qq : 에러외의 메세지 숨기는 옵션키
-!apt-get -qq install fonts-nanum
-
 # 한글 글꼴 설정
 def font_setting():
 
@@ -33,6 +29,12 @@ def font_setting():
     plt.rcParams['axes.unicode_minus'] = False
 
     #font_list = [font.name for font in fm.fontManager.ttflist]
+
+    fe = fm.FontEntry(
+        fname=r'font/NanumGothic.ttf', # ttf 파일이 저장되어 있는 경로
+        name='NanumGothic')                        # 이 폰트의 원하는 이름 설정
+    fm.fontManager.ttflist.insert(0, fe)              # Matplotlib에 폰트 추가
+    plt.rcParams.update({'font.size': 18, 'font.family': 'NanumGothic'}) # 폰트 설정
 
 
 # 기본 실행 함수
