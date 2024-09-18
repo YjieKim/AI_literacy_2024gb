@@ -9,7 +9,8 @@ import car_predict as cp
 st.sidebar.title("로그인")
 
 userid = st.sidebar.text_input("아이디(ID) 입력", value='abc', max_chars=10) # value값을 기본으로 넣어둔 것.
-userpw = st.sidebar.text_input("패스워드 입력", value='1234', type='password', max_chars=10)    # 값이 보이지 않게.
+userpw = st.sidebar.text_input("패스워드 입력", value='', type='password', max_chars=10)    # 값이 보이지 않게.
+st.sidebar.write("공개용 패스워드:1234")
 
 menu = ''
 if userid == 'abc' and userpw == '1234':
